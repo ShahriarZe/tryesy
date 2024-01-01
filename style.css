@@ -1,7 +1,102 @@
-
 /* Manrope Font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;700&display=swap');
 
 * {
     font-family: 'Manrope', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    color: #FFF;
+}
+
+header {
+    background: #141820;
+    padding: 30px 120px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo-title {
+    font-size: 30px;
+}
+
+.nav-start>ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+.nav-start {
+    display: flex;
+    gap: 50px;
+}
+
+.icon {
+    color: #FFF;
+    margin-right: 5px;
+    margin-left: 3px;
+}
+
+.btn-quote {
+    background: #D70B54;
+    padding: 10px 15px;
+}
+
+.nav-end {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.heading-section {
+    margin-top: 120px;
+}
+
+.heading {
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.nav-paragraph {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.details-btn {
+    border: 2px solid rgba(255, 255, 255, 0.20);
+    background: rgba(215, 11, 84, 0.00);
+    padding: 10px 20px;
+}
+
+.heading-end{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.phone-box{
+    background: #EDF054;
+    border-radius: 50px;
+}
+
+.phone{
+    padding: 10px;
+    color: #141820;
 }
