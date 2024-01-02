@@ -326,6 +326,40 @@ nav li a {
     flex-direction: column;
 }
 
+.feedback{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.client-feedback{
+    max-width: 900px;
+    padding: 30px;
+}
+
+.client-title{
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.client-description{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.client-img{
+    width: 100%;
+}
+
+.CEO{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 /* ---Responsive Styles--- */
 
 
@@ -394,6 +428,10 @@ nav li a {
     .member{
         grid-template-columns: 1fr;
         margin-left: 30px;
+    }
+
+    .feedback{
+        flex-direction: column;
     }
     
 }
