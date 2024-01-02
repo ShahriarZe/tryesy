@@ -6,6 +6,7 @@
     padding: 0px;
     margin: 0px;
     color: #FFF;
+
 }
 
 /* Header Section */
@@ -88,37 +89,105 @@ nav li a {
     padding: 10px 20px;
 }
 
-.heading-end{
+.heading-end {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.phone-box{
+.phone-box {
     background: #EDF054;
     border-radius: 50px;
 }
 
-.phone{
+.phone {
     padding: 10px;
     color: #141820;
 }
 
 
-/* Main Section */
+/* ---Main Section--- */
 
-.banner-img{
+
+/* Banner Image */
+.banner-img {
     width: 100%;
 }
 
-.list{
+/* Service List */
+.list {
     background: #D70B54;
     padding: 20px;
     margin-top: -10px;
 }
+
 .list ul {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
     font-weight: 500;
+}
+
+/* About Us Section */
+.about-section {
+    background: #141820;
+}
+.about-box{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    padding: 80px 200px;
+    gap: 30px;
+}
+
+.about-title {
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about-list {
+    display: flex;
+    gap: 80px;
+    font-size: 20px;
+}
+.svg-list{
+    margin-bottom: 50px;
+}
+.svg-name{
+    margin-top: 15px;
+}
+
+
+
+
+/* ---Responsive Styles--- */
+
+
+/* Small Device */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 10px;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-start{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Medium Devices */
+@media screen and (min-width: 577px) and (max-width: 960px) {
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-start{
+        flex-direction: column;
+        align-items: center;
+    }
 }
