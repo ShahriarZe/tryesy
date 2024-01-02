@@ -298,6 +298,34 @@ nav li a {
     font-weight: 400;
 }
 
+/* Team Section */
+.team-description{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.team-title{
+    font-size: 60px;
+}
+.member{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 990px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.member-box{
+    width: 282px;
+    height: 300px;
+    background: #242934;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 /* ---Responsive Styles--- */
 
 
@@ -363,6 +391,11 @@ nav li a {
     .counter-section{
         flex-wrap: wrap;
     }
+    .member{
+        grid-template-columns: 1fr;
+        margin-left: 30px;
+    }
+    
 }
 
 /* Medium Devices */
@@ -410,6 +443,11 @@ nav li a {
     .expertise-section{
         flex-direction: column;
         padding: 20px;
+    }
+
+    .member{
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 30px;
     }
 
     
