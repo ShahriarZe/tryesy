@@ -168,6 +168,30 @@ nav li a {
 
 
 
+/* ---Group Work Section */
+.group-work{
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 80px;
+    margin-top: 80px;
+}
+
+
+
+.goal-li{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.seo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+
 
 /* ---Responsive Styles--- */
 
@@ -196,6 +220,14 @@ nav li a {
         flex-wrap: wrap;
         padding: 5px;
     }
+
+    .group-work{
+        flex-direction: column;
+        padding: 5px;
+    }
+    .group-img1{
+        width: 100%;
+    }
 }
 
 /* Medium Devices */
@@ -209,8 +241,6 @@ nav li a {
         align-items: center;
     }
 
-
-
     .about-box{
         flex-direction: column;
         padding: 40px;
@@ -219,5 +249,12 @@ nav li a {
     .list ul {
         flex-wrap: wrap;
         padding: 5px;
+    }
+
+    .group-work{
+        flex-direction: column;
+    }
+    .group-img1{
+        width: 100%;
     }
 }
