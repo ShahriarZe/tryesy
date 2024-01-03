@@ -275,39 +275,42 @@ nav li a {
     margin-bottom: 30px;
 }
 
-.mail{
+.mail {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
 /* Counter-Section */
-.counter-section{
+.counter-section {
     display: flex;
     justify-content: space-evenly;
     margin-top: 100px;
-   
+
 }
-.counter{
+
+.counter {
     border-left: 2px solid #FAFF1C;
     padding: 20px;
-    
+
 }
-.counter-title{
+
+.counter-title {
     font-size: 60px;
     font-weight: 400;
 }
 
 /* Team Section */
-.team-description{
+.team-description {
     text-align: center;
     margin-top: 100px;
 }
 
-.team-title{
+.team-title {
     font-size: 60px;
 }
-.member{
+
+.member {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
@@ -316,7 +319,7 @@ nav li a {
     margin-top: 20px;
 }
 
-.member-box{
+.member-box {
     width: 282px;
     height: 300px;
     background: #242934;
@@ -326,35 +329,37 @@ nav li a {
     flex-direction: column;
 }
 
-.feedback{
+.feedback {
     display: flex;
     align-items: center;
     margin-top: 150px;
-   
+
 }
 
-.client-feedback{
+.client-feedback {
     padding: 30px;
     max-width: 500px;
-    margin:0 auto
+    margin: 0 auto
 }
 
-.client-title{
+.client-title {
     font-size: 50px;
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.client-description{
+
+.client-description {
     font-size: 18px;
     font-weight: 400;
     margin-top: 20px;
 }
-.client-img{
+
+.client-img {
     width: 100%;
 }
 
-.CEO{
+.CEO {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -364,35 +369,118 @@ nav li a {
 
 
 /* Post Section */
-.post-heading{
+.post-heading {
     text-align: center;
     margin-top: 100px;
 }
-.user{
+
+.user {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.description{
+
+.description {
     font-size: 20px;
 }
-.post-card{
+
+.post-card {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.post-card2{
-    border-bottom: 1px solid #D70B54;;
+.post-card2 {
+    border-bottom: 1px solid #D70B54;
+    ;
 }
-#card2{
+
+#card2 {
     color: #D70B54;
 }
 
-.post-img{
+.post-img {
     width: 100%;
+}
+
+/* Newsletter Section */
+/* Style for the container */
+.subscribe-container {
+    width: 100%;
+    max-width: 432px;
+    height: 54px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* Style for the input box */
+.subscribe-input {
+    width: calc(100% - 80px);
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    float: left;
+}
+
+/* Style for the subscribe button */
+.subscribe-button {
+    width: 80px;
+    height: 100%;
+    background-color: #44E8F2;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+.newsletter-box {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.subscribe {
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.agency {
+    color: #FAFF1C;
+}
+
+.svg {
+    border-radius: 20px;
+    border: 1px solid #1CFF40;
+    padding: 7.2px 6px;
+    margin-right: 4px;
+}
+
+.svg-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.newsletter {
+    background-image: url(newsBg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
 }
 
 /* ---Responsive Styles--- */
@@ -452,27 +540,46 @@ nav li a {
         flex-direction: column;
     }
 
-    .expertise-section{
+    .expertise-section {
         flex-direction: column;
         padding: 20px;
     }
 
-    .counter-section{
+    .counter-section {
         flex-wrap: wrap;
     }
-    .member{
+
+    .member {
         grid-template-columns: 1fr;
         margin-left: 30px;
     }
 
-    .feedback{
+    .feedback {
         flex-direction: column;
     }
 
-    .post-card{
+    .post-card {
         flex-direction: column;
     }
+
+    .subscribe-container {
+        height: auto; 
+      }
+      
+      .subscribe-input {
+        width: 100%;
+        float: none;
+        border-radius: 5px;
+      }
     
+      .subscribe-button {
+        width: 100%;
+        height: 30px;
+        float: none; 
+        border-radius: 5px;
+        margin-top: 10px; 
+      }
+
 }
 
 /* Medium Devices */
@@ -517,18 +624,19 @@ nav li a {
         flex-direction: column;
     }
 
-    .expertise-section{
+    .expertise-section {
         flex-direction: column;
         padding: 20px;
     }
 
-    .member{
-        grid-template-columns: repeat(2,1fr);
+    .member {
+        grid-template-columns: repeat(2, 1fr);
         margin-left: 30px;
     }
-    .post-card{
+
+    .post-card {
         flex-direction: column;
         align-items: center;
     }
-    
+
 }
