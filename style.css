@@ -329,16 +329,18 @@ nav li a {
 .feedback{
     display: flex;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 150px;
+   
 }
 
 .client-feedback{
-    max-width: 900px;
     padding: 30px;
+    max-width: 500px;
+    margin:0 auto
 }
 
 .client-title{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -358,6 +360,39 @@ nav li a {
     gap: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+
+/* Post Section */
+.post-heading{
+    text-align: center;
+    margin-top: 100px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.description{
+    font-size: 20px;
+}
+.post-card{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.post-card2{
+    border-bottom: 1px solid #D70B54;;
+}
+#card2{
+    color: #D70B54;
+}
+
+.post-img{
+    width: 100%;
 }
 
 /* ---Responsive Styles--- */
@@ -433,6 +468,10 @@ nav li a {
     .feedback{
         flex-direction: column;
     }
+
+    .post-card{
+        flex-direction: column;
+    }
     
 }
 
@@ -487,6 +526,9 @@ nav li a {
         grid-template-columns: repeat(2,1fr);
         margin-left: 30px;
     }
-
+    .post-card{
+        flex-direction: column;
+        align-items: center;
+    }
     
 }
