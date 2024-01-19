@@ -11,6 +11,8 @@
 
 /* Header Section */
 
+/* Nav Bar */
+
 header {
     background: #141820;
     padding: 30px 120px;
@@ -124,6 +126,7 @@ nav li a {
 }
 
 /* Service List */
+
 .list {
     background: #D70B54;
     padding: 20px;
@@ -138,6 +141,7 @@ nav li a {
 }
 
 /* About Us Section */
+
 .about-section {
     background: #141820;
 }
@@ -181,6 +185,7 @@ nav li a {
 
 
 /* ---Group Work Section */
+
 .group-work {
     display: flex;
     max-width: 900px;
@@ -223,10 +228,12 @@ nav li a {
     font-weight: 800;
 }
 
+
 /* Image Box */
 .image-box {
     display: flex;
 }
+
 
 /* Progress Bar */
 .progress-container {
@@ -280,6 +287,7 @@ nav li a {
     align-items: center;
     gap: 10px;
 }
+
 
 /* Counter-Section */
 .counter-section {
@@ -528,6 +536,7 @@ nav li a {
     background: rgba(255, 255, 255, 0.04);
     padding: 40px;
 }
+
 
 /* ---Responsive Styles--- */
 
